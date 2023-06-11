@@ -38,22 +38,22 @@ E.g.
 
 ```js
 const addBinary = (a, b) => {
-  let carry = 0;
-  let answer = '';
+  let carry = 0
+  let answer = ''
 
   for (let len1 = a.length - 1, len2 = b.length - 1; 
-    len1 >= 0 || len2 >= 0 || carry > 0; 
+    len1 >= 0 || len2 >= 0 || carry > 0;
     len1--, len2--) {
 
-    let sum = (+a[len1] || 0) + (+b[len2] || 0) + carry;
+    let sum = (+a[len1] || 0) + (+b[len2] || 0) + carry
 
     if (sum > 1) {
-      sum = sum % 2;
-      carry = 1;
-    } else carry = 0;
-    result = `${sum}${answer}`;
+      sum = sum % 2
+      carry = 1
+    } else carry = 0
+    result = `${sum}${answer}`
     
   }
-  return answer;
-};
+  return answer
+}
 ```
