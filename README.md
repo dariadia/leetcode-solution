@@ -1,6 +1,10 @@
-# title
+# The Algorithm Series
 
-description
+Explaining how to solve algorithm tasks (via Leetcode).
+
+## A statically generated blog using Next.js and Markdown
+
+Based on [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter)
 
 ### Stack
 - [Next.js](https://nextjs.org/)
