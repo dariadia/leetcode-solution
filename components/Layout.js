@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useState } from 'react';
 
 export default function Layout({ children, meta: pageMeta }) {
-  const [theme, setTheme] = useState('atom-dark');
+  const [theme, setTheme] = useState('coy');
   const meta = {
     title: 'Prism with Next.js',
     description:
@@ -35,21 +35,16 @@ export default function Layout({ children, meta: pageMeta }) {
         <meta name="twitter:image" content={meta.cardImage} />
         <link
           rel="preload"
-          href="https://unpkg.com/prismjs@0.0.1/themes/prism-cb.css"
+          href="https://unpkg.com/prismjs@1.29.0/themes/prism-coy.min.css"
           as="script"
         />
         <link
           rel="preload"
-          href="https://unpkg.com/prismjs@0.0.1/themes/prism-one-light.css"
+          href="https://unpkg.com/prismjs@1.29.0/themes/prism-tomorrow.min.css"
           as="script"
         />
         <link
-          rel="preload"
-          href="https://unpkg.com/prismjs@0.0.1/themes/prism-atom-dark.css"
-          as="script"
-        />
-        <link
-          href={`https://unpkg.com/prismjs@0.0.1/themes/prism-${theme}.css`}
+          href={`https://unpkg.com/prismjs@1.29.0/themes/prism-${theme}.min.css`}
           rel="stylesheet"
         />
       </Head>
@@ -71,9 +66,8 @@ export default function Layout({ children, meta: pageMeta }) {
                   value={theme}
                   className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
                 >
-                  <option value="atom-dark">Atom Dark</option>
-                  <option value="cb">CB</option>
-                  <option value="one-light">One Light</option>
+                  <option value="coy">Coy</option>
+                  <option value="tomorrow">Tomorrow</option>
                 </select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                   <svg
