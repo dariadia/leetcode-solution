@@ -12,7 +12,9 @@ Given two binary strings **a** and **b**, return their _**sum** as a binary stri
 ### Algorithm: math with "carry"
 
 ####  Time complexity: O(n)
+- we pass each number only once
 #### Space complexity: O(1)
+- we use constant space to store the answer and the "carry"
 
 <br />
 
@@ -42,12 +44,15 @@ const addBinary = (a, b) => {
   for (let len1 = a.length - 1, len2 = b.length - 1; 
     len1 >= 0 || len2 >= 0 || carry > 0; 
     len1--, len2--) {
+
     let sum = (+a[len1] || 0) + (+b[len2] || 0) + carry;
+
     if (sum > 1) {
       sum = sum % 2;
       carry = 1;
     } else carry = 0;
     result = `${sum}${answer}`;
+    
   }
   return answer;
 };
