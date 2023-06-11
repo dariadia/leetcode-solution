@@ -1,7 +1,7 @@
 ---
 title: 'Task: Find All Anagrams in a String'
-excerpt: 'Given two strings s and p, return an array of all the start indices of p's anagrams in s. An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.'
-date: '2023-04-15T05:35:07.322Z'
+excerpt: 'Given two strings s and p, return an array of all the start indices of p`s anagrams in s. An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.'
+date: '2023-04-16T05:35:07.322Z'
 author:
   name: Daria V. Diachkova
   picture: '/assets/blog/authors/daria.jpeg'
