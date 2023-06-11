@@ -6,7 +6,6 @@ const PostPreview = ({
   title,
   date,
   excerpt,
-  author,
   slug,
 }) => {
   return (
@@ -24,7 +23,6 @@ const PostPreview = ({
         <DateFormatter dateString={date} />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
     </div>
   )
 }
