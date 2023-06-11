@@ -1,15 +1,6 @@
 import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import Link from 'next/link'
-import type Author from '../interfaces/author'
-
-type Props = {
-  title: string
-  date: string
-  excerpt: string
-  author: Author
-  slug: string
-}
 
 const PostPreview = ({
   title,
@@ -17,13 +8,13 @@ const PostPreview = ({
   excerpt,
   author,
   slug,
-}: Props) => {
+}) => {
   return (
     <div>
       <h3 className="text-3xl mb-3 leading-snug">
         <Link
-          as={`/posts/${slug}`}
-          href="/posts/[slug]"
+          as={`/${slug}`}
+          href="/[slug]"
           className="hover:underline"
         >
           {title}

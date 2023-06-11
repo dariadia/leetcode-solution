@@ -1,15 +1,8 @@
 import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import PostTitle from './post-title'
-import type Author from '../interfaces/author'
 
-type Props = {
-  title: string
-  date: string
-  author: Author
-}
-
-const PostHeader = ({ title, date, author }: Props) => {
+const PostHeader = ({ title, date, author }) => {
   return (
     <>
       <PostTitle>{title}</PostTitle>

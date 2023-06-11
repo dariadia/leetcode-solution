@@ -1,12 +1,7 @@
 import Footer from './footer'
 import Meta from './meta'
 
-type Props = {
-  preview?: boolean
-  children: React.ReactNode
-}
-
-const Layout = ({ children }: Props) => {
+const GridLayout = ({ children }) => {
   return (
     <>
       <Meta />
@@ -18,4 +13,4 @@ const Layout = ({ children }: Props) => {
   )
 }
 
-export default Layout
+export default GridLayout
