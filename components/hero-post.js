@@ -13,10 +13,10 @@ const HeroPost = ({
     <section>
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
         <div>
-          <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
+          <h3 className="mb-4 text-2xl lg:text-3xl leading-tight">
             <Link
-              as={`/posts/${slug}`}
-              href="/posts/[slug]"
+              as={`/${slug}`}
+              href="/[slug]"
               className="hover:underline"
             >
               {title}
