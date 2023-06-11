@@ -39,7 +39,7 @@ E.g.
 
 
 ```js
-const addBinary = (a, b) => {
+const addBinary = (a: string, b: string): string => {
   let carry = 0
   let answer = ''
 

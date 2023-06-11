@@ -1,6 +1,6 @@
 ---
 title: 'Task: Add Digits'
-excerpt: ''
+excerpt: 'Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.'
 date: '2023-04-11T05:35:07.322Z'
 author:
   name: Daria V. Diachkova
