@@ -7,6 +7,8 @@ author:
   picture: '/assets/blog/authors/daria.jpeg'
 ---
 
+## Add Binary
+
 Given two binary strings **a** and **b**, return their _**sum** as a binary string_.
 
 ### Algorithm: math with "carry"

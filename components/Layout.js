@@ -53,7 +53,7 @@ export default function Layout({ children, meta: pageMeta }) {
         <div className="flex justify-between items-center p-8 mx-2">
           <Link href="/">
             <a className="no-underline font-semibold invisible sm:visible">
-              <h1>{meta.title}</h1>
+              Home
             </a>
           </Link>
           <ul className="flex justify-between items-center space-x-4">
