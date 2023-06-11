@@ -3,13 +3,11 @@ import Head from 'next/head';
 import { useState } from 'react';
 
 export default function Layout({ children, meta: pageMeta }) {
-  const [theme, setTheme] = useState('coy');
+  const [theme, setTheme] = useState('tomorrow');
   const meta = {
-    title: 'Prism with Next.js',
+    title: 'The Algorithm Series',
     description:
-      'Example using Prism / Markdown with Next.js including switching syntax highlighting themes.',
-    cardImage:
-      'https://og-image.now.sh/**Prism**%20with%20Next.js.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-white-logo.svg',
+      'Explaining how to solve algorithm tasks (via Leetcode).',
     ...pageMeta
   };
 
@@ -79,16 +77,6 @@ export default function Layout({ children, meta: pageMeta }) {
                   </svg>
                 </div>
               </div>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/leerob/nextjs-prism-markdown"
-                className="no-underline font-semibold text-gray-700"
-              >
-                Source
-              </a>
             </li>
           </ul>
         </div>

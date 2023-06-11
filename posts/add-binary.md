@@ -10,19 +10,6 @@ author:
 Given two binary strings a and b, return their sum as a binary string.
 
 ```js
-// lib/markdown.js
-
-import remark from 'remark';
-import html from 'remark-html';
-import prism from 'remark-prism';
-
-export default async function markdownToHtml(markdown) {
-  const result = await remark().use(html).use(prism).process(markdown);
-  return result.toString();
-}
-```
-
-```js
 let addBinary = (a, b) => {
   let carry = 0
   let result = ''

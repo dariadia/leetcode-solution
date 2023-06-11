@@ -1,6 +1,6 @@
-import Layout from '~/components/Layout';
 import { getAllPosts, getDocBySlug } from '~/lib/posts';
 import markdownToHtml from '~/lib/markdown';
+import Layout from '../components/layout';
 
 export default function Doc({ meta, content }) {
   return <Layout meta={meta}>{content}</Layout>;
