@@ -39,5 +39,5 @@ const canMakeArithmeticProgression = (arr: number[]): boolean => {
       return false
     }
   return true
-};
+}
 ```
