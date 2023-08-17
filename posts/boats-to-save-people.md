@@ -1,5 +1,5 @@
 ---
-title: 'Task: Task Boats to Save People'
+title: 'Task: Boats to Save People'
 excerpt: 'You are given an array people where people[i] is the weight of the ith person, and an infinite number of boats where each boat can carry a maximum weight of limit. Each boat carries at most two people at the same time, provided the sum of the weight of those people is at most limit. Return the minimum number of boats to carry every given person.'
 date: '2023-05-01T05:35:07.322Z'
 author:
@@ -9,12 +9,12 @@ author:
 
 ## Task Boats to Save People
 
-You are given an array people where people[i] is the weight of the ith person, and an infinite number of boats where each boat can carry a maximum weight of limit. Each boat carries at most two people at the same time, provided the sum of the weight of those people is at most limit. Return the minimum number of boats to carry every given person.
+You are given an array `people` where `people[i]` is the weight of the ith person and an infinite number of boats where each boat can carry a maximum weight of limit. Each boat carries at most two people at the same time, provided the sum of the weight of those people is at most limit. Return the minimum number of boats to carry every given person.
 
 ### Algorithm: two pointers
 - We sort the people array in ascending order;
 - Then init left & right pointers, and a counter for the boats already taken.
-- Then check and incremeant accordingly.
+- Then check and increment accordingly.
 
 ####  Time complexity: O(n x logn)
 - for the sorting algorithm
